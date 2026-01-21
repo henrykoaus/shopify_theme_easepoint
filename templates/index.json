@@ -1,0 +1,194 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Make your daily inconveniences a thing of the past",
+            "heading_size": "h2"
+          }
+        },
+        "text_YKpjHd": {
+          "type": "text",
+          "settings": {
+            "text": "Get 50% off all your everyday life-savers today",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Sale",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text_YKpjHd", "button"],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Desktop_Banner_Image_Resized.png",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "image_behavior": "ambient",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "collection_list_4hY8XJ": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_9mRzyw": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        },
+        "featured_collection_ezHthh": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        },
+        "featured_collection_GFzMpU": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        },
+        "featured_collection_3yhePh": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        },
+        "featured_collection_e4nhPG": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        }
+      },
+      "block_order": [
+        "featured_collection_9mRzyw",
+        "featured_collection_ezHthh",
+        "featured_collection_GFzMpU",
+        "featured_collection_3yhePh",
+        "featured_collection_e4nhPG"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Our Top Sellers",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "text_columns_XT7URg": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_3XAtcC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Benefit 1",
+            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_KCmEyL": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Benefit 2",
+            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_HHUaxP": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Benefit 3",
+            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_JkBYAK": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Guarantee",
+            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_3XAtcC",
+        "text_block_KCmEyL",
+        "text_block_HHUaxP",
+        "text_block_JkBYAK"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "bg": "",
+        "title": "Why easepoint?",
+        "button_label": "Shop All Products",
+        "button_link": "",
+        "use_cart_btn": false,
+        "hide_on_mobile": false,
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 3,
+        "title": "<strong>Choose From Our Best-Selling Products<\/strong>",
+        "heading_size": "h1",
+        "align_text": "center",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "collection_list_4hY8XJ",
+    "text_columns_XT7URg",
+    "featured_collection"
+  ]
+}

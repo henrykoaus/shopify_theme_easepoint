@@ -1,0 +1,227 @@
+{% if url != blank %}
+  {% assign col_url = url %}
+{% else %}
+  {% assign col_url = card_collection.url %}
+{% endif %}
+
+{% if image != blank %}
+  {% assign col_f_image = image %}
+{% else %}
+  {% assign col_f_image = card_collection.featured_image %}
+{% endif %}
+
+{% if title != blank %}
+  {% assign col_title = title %}
+{% else %}
+  {% assign col_title = card_collection.title | escape %}
+{% endif %}
+
+
+{%- liquid
+  assign ratio = 1
+  if col_f_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif col_f_image and media_aspect_ratio == 'adapt'
+    assign ratio = col_f_image.aspect_ratio
+  endif
+  if ratio == 0 or ratio == null
+    assign ratio = 1
+  endif
+  assign card_color_scheme = settings.card_color_scheme
+  assign card_style = settings.card_style
+  if wrapper_class == null or wrapper_class == 'none'
+    assign card_color_scheme = settings.collection_card_color_scheme
+    assign card_style = settings.collection_card_style
+  endif
+-%}
+<a class="coll-card-link-wrap" href="{{ col_url }}">
+<div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+  <div
+    class="
+      card 
+    {% if card_design == 'overlay_text' %}
+      overlayCard
+    {% endif %}
+    {% if card_design == 'overlaid_with_box' %}
+      overlayCard overlayWhite
+    {% endif %}
+      card--{{ card_style }}
+      {% if col_f_image %} card--media{% else %} card--text{% endif %}
+      {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
+      {% if extend_height %} card--extend-height{% endif %}
+      {% if col_f_image == nil and card_style == 'card' %} ratio{% endif %}
+    "
+    style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+  >
+      
+    
+    <div
+      class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if col_f_image or card_style == 'standard' %} ratio{% endif %}"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+    >
+      {%- if col_f_image -%}
+        <div class="card__media">
+          <div class="media media--transparent media--hover-effect">
+            <img
+              srcset="
+                {%- if col_f_image.width >= 165 -%}{{ col_f_image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if col_f_image.width >= 330 -%}{{ col_f_image | image_url: width: 330 }} 330w,{%- endif -%}
+                {%- if col_f_image.width >= 535 -%}{{ col_f_image | image_url: width: 535 }} 535w,{%- endif -%}
+                {%- if col_f_image.width >= 750 -%}{{ col_f_image | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if col_f_image.width >= 1000 -%}{{ col_f_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                {%- if col_f_image.width >= 1500 -%}{{ col_f_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if col_f_image.width >= 3000 -%}{{ col_f_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {{ col_f_image | image_url }} {{ col_f_image.width }}w
+              "
+              src="{{ col_f_image | image_url: width: 1500 }}"
+              sizes="
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                calc(100vw - 3rem)
+              "
+              alt=""
+              height="{{ col_f_image.height }}"
+              width="{{ col_f_image.width }}"
+              loading="lazy"
+              class="motion-reduce"
+            >
+          </div>
+        </div>
+      
+      {%- endif -%}
+     
+      {%- if col_f_image == blank and col_title == blank  and col_url == blank -%}
+        <div class="card__media others_blank">
+          {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- else -%}
+        {% if col_url != blank %}
+        <div class="card__content">
+          <div class="card__information">
+            <h3 class="card__heading col_title">
+              <a
+                {% if card_collection == blank and col_url == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ col_url }}"
+                {% endif %}
+                class="full-unstyled-link"
+              >
+                {%- if col_title != blank -%}
+                  {{- col_title -}}
+                {%- else -%}
+                  {{ 'onboarding.collection_title' | t }}
+                {%- endif -%}
+                {%- if card_collection.description == blank -%}
+                  {% comment %}
+                  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                  {% endcomment %}
+                {%- endif %}
+              </a>
+            </h3>
+            {%- if card_collection.description != blank -%}
+              <p class="card__caption">
+                {{- card_collection.description | strip_html | truncatewords: 12 -}}
+                 {% comment %}
+                <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                {% endcomment %}
+              </p>
+            {%- endif -%}
+          </div>
+        </div>
+          {% endif %}
+      {%- endif -%}
+    </div>
+
+    {%- if card_collection == blank and card_style == 'card' or col_f_image -%}
+      <div class="card__content {% if card_design == 'overlaid_with_box' %} bg-white {% endif %}">
+        <div class="card__information">
+          <h3 class="card__heading">
+            <a
+              {% if card_collection == blank and col_url == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ col_url }}"
+              {% endif %}
+              class="full-unstyled-link"
+            >
+              {%- if col_title != blank -%}
+                {{- col_title | escape -}}
+              {%- else -%}
+                {{ 'onboarding.collection_title' | t }}
+              {%- endif -%}
+              {%- if col_f_image or card_collection.description == blank -%}
+              {%- endif %}
+               {{- card_collection.description | strip_html | truncatewords: 12 -}}
+              {% comment %}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+            {% endcomment %}
+            </a>
+          </h3>
+          {%- if col_f_image == null and card_collection.description != blank -%}
+            <p class="card__caption">
+              {{- card_collection.description | strip_html | truncatewords: 12 -}}
+              {% comment %}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+            {% endcomment %}
+            </p>
+          {%- endif -%}
+        </div>
+      </div>
+    {% elsif card_collection != blank and card_style == 'card' or col_f_image %}
+         <div class="card__content {% if card_design == 'overlaid_with_box' %} bg-white {% endif %}">
+        <div class="card__information">
+          <h3 class="card__heading">
+            <a
+              {% if card_collection == blank and col_url == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ col_url }}"
+              {% endif %}
+              class="full-unstyled-link"
+            >
+              {%- if col_title != blank -%}
+                {{- col_title | escape -}}
+              {%- else -%}
+                {{ 'onboarding.collection_title' | t }}
+              {%- endif -%}
+              {%- if col_f_image or card_collection.description == blank -%}
+              {%- endif %}
+               {{- card_collection.description | strip_html | truncatewords: 12 -}}
+              {% comment %}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+            {% endcomment %}
+            </a>
+          </h3>
+          {%- if col_f_image == null and card_collection.description != blank -%}
+            <p class="card__caption">
+              {{- card_collection.description | strip_html | truncatewords: 12 -}}
+              {% comment %}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+            {% endcomment %}
+            </p>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+    {%- if card_collection == blank and col_url == blank -%}
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading card__heading--placeholder">
+            <a role="link" aria-disabled="true" class="full-unstyled-link">
+              {% if col_title != blank %}
+                {{ col_title }}
+              {% else %}
+                {{ 'onboarding.collection_title' | t }}
+              {% endif %}
+              {% comment %}
+              <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+      {% endcomment %}
+            </a>
+          </h3>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+</a>

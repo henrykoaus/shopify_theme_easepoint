@@ -1,0 +1,1 @@
+/Users/henryjung/shopifydev/theme_easepoint/theme_easepoint/AGENTS.md

@@ -1,0 +1,105 @@
+.collection-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collection-list-title {
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .collection-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-collection-list .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-collection-list .collection-list:not(.slider) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.collection-list__item:only-child {
+  max-width: 100%;
+  width: 100%;
+}
+.collection-list__item .card--standard>.card__content{
+  padding:0 17px;
+  text-align:center;
+}
+@media screen and (max-width: 749px) {
+  .slider.collection-list--1-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .slider.collection-list--1-items,
+  .slider.collection-list--2-items,
+  .slider.collection-list--3-items,
+  .slider.collection-list--4-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection-list__item a:hover {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection-list.slider .collection-list__item {
+    max-width: 100%;
+  }
+  
+  /* Force 2 items view on mobile/tablet slider */
+  .section-collection-list .slider.grid--2-col-tablet-down {
+    column-gap: 0 !important;
+    padding-left: 1.5rem;   /* Start of list padding */
+    padding-right: 1.5rem;  /* End of list padding */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .section-collection-list .slider.grid--2-col-tablet-down .collection-list__item {
+    /* 
+       Total width needed for 2 items to reach from 1.5rem (left pad) to 100vw (right edge):
+       (100vw - 1.5rem) / 2 
+    */
+    width: calc(50vw - 0.75rem);
+    max-width: calc(50vw - 0.75rem);
+    padding-left: 0;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Apply increased spacing if not gapless */
+  .section-collection-list .slider.grid--2-col-tablet-down:not(.grid--gapless) .collection-list__item {
+    padding-right: 3rem; /* Further increased spacing as requested */
+  }
+}
+
+.collection-list-view-all {
+  margin-top: 2rem;
+}
+.collection .product-grid.contains-card{
+  row-gap: 30px;
+}
+/* .collection .button {
+    font-size: 22px;
+    padding: 18px 42px 15px;
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 300px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    transition: background .2s ease 0s;
+    overflow: hidden;
+} */
