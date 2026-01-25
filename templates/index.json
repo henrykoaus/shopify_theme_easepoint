@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -21,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop Sale",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -29,9 +38,13 @@
           }
         }
       },
-      "block_order": ["heading", "text_YKpjHd", "button"],
+      "block_order": [
+        "heading",
+        "text_YKpjHd",
+        "button"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Desktop_Banner_Image_Resized.png",
+        "image": "shopify://shop_images/Desktop_Banner_Image_Resized.png",
         "image_overlay_opacity": 10,
         "image_height": "small",
         "image_behavior": "ambient",
@@ -49,42 +62,53 @@
       "blocks": {
         "featured_collection_9mRzyw": {
           "type": "featured_collection",
-          "settings": { "collection": "" }
+          "settings": {
+            "collection": "",
+            "title": "",
+            "collection_link": "",
+            "hide_in_mobile": false
+          }
         },
         "featured_collection_ezHthh": {
           "type": "featured_collection",
-          "settings": { "collection": "" }
-        },
-        "featured_collection_GFzMpU": {
-          "type": "featured_collection",
-          "settings": { "collection": "" }
-        },
-        "featured_collection_3yhePh": {
-          "type": "featured_collection",
-          "settings": { "collection": "" }
+          "settings": {
+            "collection": "",
+            "title": "",
+            "collection_link": "",
+            "hide_in_mobile": false
+          }
         },
         "featured_collection_e4nhPG": {
           "type": "featured_collection",
-          "settings": { "collection": "" }
+          "settings": {
+            "collection": "",
+            "title": "",
+            "collection_link": "",
+            "hide_in_mobile": false
+          }
         }
       },
       "block_order": [
         "featured_collection_9mRzyw",
         "featured_collection_ezHthh",
-        "featured_collection_GFzMpU",
-        "featured_collection_3yhePh",
         "featured_collection_e4nhPG"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Our Top Sellers",
+        "show_divider": false,
+        "add_spacing": true,
         "heading_size": "h1",
-        "image_ratio": "square",
+        "card_design": "overlay_text",
+        "image_ratio": "portrait",
         "columns_desktop": 3,
         "color_scheme": "",
-        "show_view_all": true,
+        "show_view_all": false,
+        "view_all_label": "",
+        "view_all_style": "solid",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "hide_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -98,7 +122,7 @@
             "enable_image": true,
             "image_width": 100,
             "title": "Benefit 1",
-            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "text": "<p>Explain the benefit in a sentence</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -109,7 +133,7 @@
             "enable_image": true,
             "image_width": 100,
             "title": "Benefit 2",
-            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "text": "<p>Explain the benefit in a sentence</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -120,7 +144,7 @@
             "enable_image": true,
             "image_width": 100,
             "title": "Benefit 3",
-            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "text": "<p>Explain the benefit in a sentence</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -131,7 +155,7 @@
             "enable_image": true,
             "image_width": 100,
             "title": "Guarantee",
-            "text": "<p>Explain the benefit in a sentence<\/p>",
+            "text": "<p>Explain the benefit in a sentence</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -147,8 +171,9 @@
       "settings": {
         "bg": "",
         "title": "Why easepoint?",
-        "button_label": "Shop All Products",
-        "button_link": "",
+        "heading_size": "h1",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/all",
         "use_cart_btn": false,
         "hide_on_mobile": false,
         "align_text": "center",
@@ -158,30 +183,32 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
-        "products_to_show": 3,
-        "title": "<strong>Choose From Our Best-Selling Products<\/strong>",
+        "title": "Choose From Our Best-Selling Products",
+        "show_divider": false,
+        "show_title_on_left": false,
         "heading_size": "h1",
-        "align_text": "center",
         "description": "",
         "show_description": false,
         "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 3,
         "columns_desktop": 3,
-        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "hide_on_mobile": false,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 44,
-        "padding_bottom": 36
+        "padding_bottom": 44
       }
     }
   },
