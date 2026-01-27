@@ -1,3 +1,42 @@
+
+		{%- comment -%}Start of Pagepilot styles - Do not remove{%- endcomment -%}
+		{{ 'pagepilot-styles.css' | asset_url | stylesheet_tag }}
+		{%- style -%}
+		.pp-section-{{ section.id }} {
+		padding-top: {{ section.settings.padding_top_mobile }}px;
+		padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+		}
+
+		:root {
+		--pp-heading-font-size: {{ section.settings.heading_font_size }}px !important;
+		--pp-body-font-size: {{ section.settings.body_font_size }}px !important;
+		--pp-heading-color: {{ section.settings.pp_heading_color }} !important;
+		--pp-body-color: {{ section.settings.pp_body_color }} !important;
+		--pp-brand-color: {{ section.settings.pp_brand_color }} !important;
+		--pp-button-background-color: {{ section.settings.pp_button_background_color }} !important;
+		--pp-button-text-color: {{ section.settings.pp_button_text_color }} !important;
+		--pp-border-radius: {{ section.settings.pp_border_radius }}px;
+		}
+
+		@media screen and (min-width: 750px) {
+		.pp-section-{{ section.id }} {
+				padding-top: {{ section.settings.padding_top }}px;
+				padding-bottom: {{ section.settings.padding_bottom }}px;
+		}
+
+		:root {
+				--pp-heading-font-size: {{ section.settings.heading_font_size }}px !important;
+				--pp-body-font-size: {{ section.settings.body_font_size }}px !important;
+		}
+		}
+
+		
+		{%- endstyle -%}
+		{%- comment -%}End of Pagepilot styles - Do not remove{%- endcomment -%}
+
+		
+
+		
 <product-info
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -86,6 +125,7 @@
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
           {%- for block in section.blocks -%}
+{% render 'pp-blocks-v1-0-0' , product: product, block: block, section: section %}
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
@@ -2086,6 +2126,814 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
+    },
+    {
+      "type": "pp_text",
+      "name": "PP Text",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "default": "Text block",
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "Body"
+            },
+            {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "uppercase",
+              "label": "Uppercase"
+            }
+          ],
+          "default": "body",
+          "label": "Text style"
+        }
+      ]
+    },
+    {
+      "type": "pp_title",
+      "name": "PP Title",
+      "limit": 1
+    },
+    {
+      "type": "pp_price",
+      "name": "PP Price",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "price_color",
+          "label": "Price Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "compare_price_color",
+          "label": "Compare at Price Color",
+          "default": "#B6B6B6"
+        }
+      ]
+    },
+    {
+      "type": "pp_quantity",
+      "name": "PP Quantity",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "quantity_text",
+          "label": "Quantity Text",
+          "default": "Quantity"
+        }
+      ]
+    },
+    {
+      "type": "pp_variant_picker",
+      "name": "PP Variant Picker",
+      "limit": 1
+    },
+    {
+      "type": "pp_buy_buttons",
+      "name": "PP Buy Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "default": false,
+          "label": "Show dynamic checkout",
+          "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay."
+        },
+        {
+          "type": "text",
+          "id": "add_to_cart_text",
+          "label": "Add to Cart Text",
+          "default": "Add to Cart"
+        },
+        {
+          "type": "text",
+          "id": "sold_out_text",
+          "label": "Sold Out Text",
+          "default": "Sold Out"
+        },
+        {
+          "type": "text",
+          "id": "unavailable_text",
+          "label": "Unavailable Text",
+          "default": "Unavailable"
+        }
+      ]
+    },
+    {
+      "type": "pp_cart_drawer",
+      "name": "PP Cart Drawer",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "cart_drawer_title",
+          "label": "Cart Drawer Title",
+          "default": "Your cart"
+        },
+        {
+          "type": "text",
+          "id": "cart_drawer_total_text",
+          "label": "Cart Drawer Total Text",
+          "default": "Total"
+        },
+        {
+          "type": "text",
+          "id": "cart_drawer_empty_text",
+          "label": "Cart Drawer Empty Text",
+          "default": "Your cart is empty"
+        },
+        {
+          "type": "text",
+          "id": "checkout_button_text",
+          "label": "Checkout Button Text",
+          "default": "Checkout"
+        }
+      ]
+    },
+    {
+      "type": "pp_description",
+      "name": "PP Description",
+      "limit": 1
+    },
+    {
+      "type": "pp_review_numbers",
+      "name": "PP Review Numbers",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5,
+          "label": "Rating"
+        },
+        {
+          "type": "color",
+          "id": "stars_color",
+          "label": "Stars Color",
+          "default": "#facc15"
+        },
+        {
+          "type": "number",
+          "id": "review_count",
+          "label": "Number of Reviews",
+          "default": 343
+        },
+        {
+          "type": "text",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "Reviews"
+        }
+      ]
+    },
+    {
+      "type": "pp_review_block",
+      "name": "PP Review Block",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5,
+          "label": "Rating"
+        },
+        {
+          "type": "color",
+          "id": "stars_color",
+          "label": "Stars Color",
+          "default": "#facc15"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "review",
+          "label": "Review",
+          "default": "\"In this field, you can put the most amazing review you have received from your customer. Use it as the best selling reference for your product.\""
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "John Doe, United States"
+        }
+      ]
+    },
+    {
+      "type": "pp_custom_liquid_block",
+      "name": "PP Custom Liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    },
+    {
+      "type": "pp_expandable_text",
+      "name": "PP Expandable Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Frequently Asked Questions"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Enter your text here</p>"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "back",
+              "label": "Back"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "certification",
+              "label": "Certification"
+            },
+            {
+              "value": "checkmark-circle",
+              "label": "Checkmark Circle"
+            },
+            {
+              "value": "checkmark",
+              "label": "Checkmark"
+            },
+            {
+              "value": "clockwise",
+              "label": "Clockwise"
+            },
+            {
+              "value": "coins",
+              "label": "Coins"
+            },
+            {
+              "value": "credit-card",
+              "label": "Credit Card"
+            },
+            {
+              "value": "cube",
+              "label": "Cube"
+            },
+            {
+              "value": "discount",
+              "label": "Discount"
+            },
+            {
+              "value": "dollar-bill",
+              "label": "Dollar Bill"
+            },
+            {
+              "value": "globe",
+              "label": "Globe"
+            },
+            {
+              "value": "hand-coins",
+              "label": "Hand with Coins"
+            },
+            {
+              "value": "hand-heart",
+              "label": "Hand with Heart"
+            },
+            {
+              "value": "handshake",
+              "label": "Handshake"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "headset",
+              "label": "Headset"
+            },
+            {
+              "value": "peace",
+              "label": "Peace"
+            },
+            {
+              "value": "people",
+              "label": "People"
+            },
+            {
+              "value": "person",
+              "label": "Person"
+            },
+            {
+              "value": "phone",
+              "label": "Phone"
+            },
+            {
+              "value": "question",
+              "label": "Question"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "smiley-face",
+              "label": "Smiley Face"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "success",
+              "label": "Success"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "Thumbs Up"
+            },
+            {
+              "value": "trophy",
+              "label": "Trophy"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "user-plus",
+              "label": "User Plus"
+            }
+          ],
+          "default": "truck"
+        }
+      ]
+    },
+    {
+      "type": "pp_icons_with_text",
+      "name": "PP Icons with Text",
+      "settings": [
+        {
+          "type": "range",
+          "id": "icons_size",
+          "label": "Icons size",
+          "min": 20,
+          "max": 100,
+          "step": 2,
+          "default": 30
+        },
+        {
+          "type": "select",
+          "id": "guarantee_1_icon",
+          "label": "Guarantee 1 Icon",
+          "options": [
+            {
+              "value": "back",
+              "label": "Back"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "certification",
+              "label": "Certification"
+            },
+            {
+              "value": "checkmark-circle",
+              "label": "Checkmark Circle"
+            },
+            {
+              "value": "checkmark",
+              "label": "Checkmark"
+            },
+            {
+              "value": "clockwise",
+              "label": "Clockwise"
+            },
+            {
+              "value": "coins",
+              "label": "Coins"
+            },
+            {
+              "value": "credit-card",
+              "label": "Credit Card"
+            },
+            {
+              "value": "cube",
+              "label": "Cube"
+            },
+            {
+              "value": "discount",
+              "label": "Discount"
+            },
+            {
+              "value": "dollar-bill",
+              "label": "Dollar Bill"
+            },
+            {
+              "value": "globe",
+              "label": "Globe"
+            },
+            {
+              "value": "hand-coins",
+              "label": "Hand with Coins"
+            },
+            {
+              "value": "hand-heart",
+              "label": "Hand with Heart"
+            },
+            {
+              "value": "handshake",
+              "label": "Handshake"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "headset",
+              "label": "Headset"
+            },
+            {
+              "value": "peace",
+              "label": "Peace"
+            },
+            {
+              "value": "people",
+              "label": "People"
+            },
+            {
+              "value": "person",
+              "label": "Person"
+            },
+            {
+              "value": "phone",
+              "label": "Phone"
+            },
+            {
+              "value": "question",
+              "label": "Question"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "smiley-face",
+              "label": "Smiley Face"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "success",
+              "label": "Success"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "Thumbs Up"
+            },
+            {
+              "value": "trophy",
+              "label": "Trophy"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "user-plus",
+              "label": "User Plus"
+            }
+          ],
+          "default": "globe"
+        },
+        {
+          "type": "text",
+          "id": "guarantee_1_text",
+          "label": "Guarantee 1 Text",
+          "default": "Worldwide Shipping"
+        },
+        {
+          "type": "select",
+          "id": "guarantee_2_icon",
+          "label": "Guarantee 2 Icon",
+          "options": [
+            {
+              "value": "back",
+              "label": "Back"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "certification",
+              "label": "Certification"
+            },
+            {
+              "value": "checkmark-circle",
+              "label": "Checkmark Circle"
+            },
+            {
+              "value": "checkmark",
+              "label": "Checkmark"
+            },
+            {
+              "value": "clockwise",
+              "label": "Clockwise"
+            },
+            {
+              "value": "coins",
+              "label": "Coins"
+            },
+            {
+              "value": "credit-card",
+              "label": "Credit Card"
+            },
+            {
+              "value": "cube",
+              "label": "Cube"
+            },
+            {
+              "value": "discount",
+              "label": "Discount"
+            },
+            {
+              "value": "dollar-bill",
+              "label": "Dollar Bill"
+            },
+            {
+              "value": "globe",
+              "label": "Globe"
+            },
+            {
+              "value": "hand-coins",
+              "label": "Hand with Coins"
+            },
+            {
+              "value": "hand-heart",
+              "label": "Hand with Heart"
+            },
+            {
+              "value": "handshake",
+              "label": "Handshake"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "headset",
+              "label": "Headset"
+            },
+            {
+              "value": "peace",
+              "label": "Peace"
+            },
+            {
+              "value": "people",
+              "label": "People"
+            },
+            {
+              "value": "person",
+              "label": "Person"
+            },
+            {
+              "value": "phone",
+              "label": "Phone"
+            },
+            {
+              "value": "question",
+              "label": "Question"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "smiley-face",
+              "label": "Smiley Face"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "success",
+              "label": "Success"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "Thumbs Up"
+            },
+            {
+              "value": "trophy",
+              "label": "Trophy"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "user-plus",
+              "label": "User Plus"
+            }
+          ],
+          "default": "hand-coins"
+        },
+        {
+          "type": "text",
+          "id": "guarantee_2_text",
+          "label": "Guarantee 2 Text",
+          "default": "100% Money-Back Guarantee"
+        },
+        {
+          "type": "select",
+          "id": "guarantee_3_icon",
+          "label": "Guarantee 3 Icon",
+          "options": [
+            {
+              "value": "back",
+              "label": "Back"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "certification",
+              "label": "Certification"
+            },
+            {
+              "value": "checkmark-circle",
+              "label": "Checkmark Circle"
+            },
+            {
+              "value": "checkmark",
+              "label": "Checkmark"
+            },
+            {
+              "value": "clockwise",
+              "label": "Clockwise"
+            },
+            {
+              "value": "coins",
+              "label": "Coins"
+            },
+            {
+              "value": "credit-card",
+              "label": "Credit Card"
+            },
+            {
+              "value": "cube",
+              "label": "Cube"
+            },
+            {
+              "value": "discount",
+              "label": "Discount"
+            },
+            {
+              "value": "dollar-bill",
+              "label": "Dollar Bill"
+            },
+            {
+              "value": "globe",
+              "label": "Globe"
+            },
+            {
+              "value": "hand-coins",
+              "label": "Hand with Coins"
+            },
+            {
+              "value": "hand-heart",
+              "label": "Hand with Heart"
+            },
+            {
+              "value": "handshake",
+              "label": "Handshake"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "headset",
+              "label": "Headset"
+            },
+            {
+              "value": "peace",
+              "label": "Peace"
+            },
+            {
+              "value": "people",
+              "label": "People"
+            },
+            {
+              "value": "person",
+              "label": "Person"
+            },
+            {
+              "value": "phone",
+              "label": "Phone"
+            },
+            {
+              "value": "question",
+              "label": "Question"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "smiley-face",
+              "label": "Smiley Face"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "success",
+              "label": "Success"
+            },
+            {
+              "value": "thumbs-up",
+              "label": "Thumbs Up"
+            },
+            {
+              "value": "trophy",
+              "label": "Trophy"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "user-plus",
+              "label": "User Plus"
+            }
+          ],
+          "default": "back"
+        },
+        {
+          "type": "text",
+          "id": "guarantee_3_text",
+          "label": "Guarantee 3 Text",
+          "default": "Free Returns"
+        }
+      ]
+    },
+    {
+      "type": "pp_divider",
+      "name": "PP Divider"
     }
   ],
   "settings": [
@@ -2262,6 +3110,85 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 12,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "body_font_size",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Body font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_font_size",
+      "min": 12,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_body_font_size",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Body font size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "pp_heading_color",
+      "label": "Heading Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "pp_body_color",
+      "label": "Body Text color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "pp_brand_color",
+      "label": "Brand color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "pp_button_background_color",
+      "label": "Button background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "pp_button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "pp_border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "label": "Border radius",
+      "default": 4
     }
   ]
 }

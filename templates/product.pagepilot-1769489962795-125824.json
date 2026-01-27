@@ -1,0 +1,519 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "reviewNumbers_0_uen38s": {
+          "type": "pp_review_numbers",
+          "settings": {
+            "rating": 5,
+            "stars_color": "#facc15",
+            "review_count": 409,
+            "review_text": "Reviews"
+          }
+        },
+        "productTitle_zfdj1t": {
+          "type": "title",
+          "settings": {}
+        },
+        "benefit_dy2hrh": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Improve Stability During Sports Activities",
+            "text_style": "body"
+          }
+        },
+        "benefit_gn0acn": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Reduce Sprain Risk With Targeted Compression",
+            "text_style": "body"
+          }
+        },
+        "benefit_rt5ps9": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Enhance Comfort With Breathable Design",
+            "text_style": "body"
+          }
+        },
+        "benefit_91we61": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Boost Confidence With Secure Support",
+            "text_style": "body"
+          }
+        },
+        "Divider_4_62o2db": {
+          "type": "pp_divider",
+          "settings": {}
+        },
+        "productPrice_npj66o": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_0_oy9rgu": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "variantPicker_st8tc4": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "productBuyButton_wzr5ox": {
+          "type": "buy_buttons",
+          "settings": {}
+        },
+        "reviewBlock_0_bk0le6": {
+          "type": "pp_review_block",
+          "settings": {
+            "rating": 5,
+            "stars_color": "#facc15",
+            "image": "shopify://shop_images/pets_9efaf007-710d-457b-93b4-09ffb9d5240a.png",
+            "review": "\"I used it about twice while stretching. It firmly holds the ankle well. Because it touches the concave part of the sole There aren't many foreign objects either. It's a very good product that tightly grips the ankle. Highly recommended.\"",
+            "name": "Hina J"
+          }
+        },
+        "Divider_3_zcmc2t": {
+          "type": "pp_divider",
+          "settings": {}
+        },
+        "expandable_5keu68": {
+          "type": "pp_expandable_text",
+          "settings": {
+            "title": "Shipping Information",
+            "content": "<p>We provide insured and tracked shipping for every order. The estimated delivery times after shipment are as follows: USA: 3-7 business days, UK: 7-18 business days, Australia: 7-18 business days, Canada: 7-18 business days, Europe: 7-18 business days, Rest of the world: 14-20 business days.</p>",
+            "icon": "globe"
+          }
+        },
+        "expandable_k3593y": {
+          "type": "pp_expandable_text",
+          "settings": {
+            "title": "Return Policy",
+            "content": "<p>We have a strong affection for our products, and we believe that you will share the same sentiment. Therefore, we are providing a 30-Day Trial, free from any risks.\nIf you are not fully satisfied with the outcome, we will reimburse you.</p>",
+            "icon": "back"
+          }
+        }
+      },
+      "block_order": [
+        "reviewNumbers_0_uen38s",
+        "productTitle_zfdj1t",
+        "benefit_dy2hrh",
+        "benefit_gn0acn",
+        "benefit_rt5ps9",
+        "benefit_91we61",
+        "Divider_4_62o2db",
+        "productPrice_npj66o",
+        "quantity_0_oy9rgu",
+        "variantPicker_st8tc4",
+        "productBuyButton_wzr5ox",
+        "reviewBlock_0_bk0le6",
+        "Divider_3_zcmc2t",
+        "expandable_5keu68",
+        "expandable_k3593y"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "heading_font_size": 24,
+        "body_font_size": 16,
+        "pp_heading_color": "#000000",
+        "pp_body_color": "#000000",
+        "pp_brand_color": "#8d8d8d",
+        "pp_button_background_color": "#000000",
+        "pp_button_text_color": "#FFFFFF",
+        "pp_border_radius": 16
+      }
+    },
+    "imageWithText_vr9nh4": {
+      "type": "pp-image-with-text-v1-0-0",
+      "blocks": {
+        "heading_8ppz2r": {
+          "type": "heading",
+          "settings": {
+            "heading": "Suffer from frequent ankle sprains?"
+          }
+        },
+        "text_n47nyo": {
+          "type": "text",
+          "settings": {
+            "text": "Our ankle brace provides targeted compression and stability, reducing the risk of sprains. Feel confident in every step, whether running, jumping, or walking. It’s a must-have for anyone prone to ankle injuries."
+          }
+        },
+        "button_8q1ps7": {
+          "type": "button",
+          "settings": {
+            "button_behaviour": "scroll_to_top",
+            "button_label": "Get Mine Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_8ppz2r",
+        "text_n47nyo",
+        "button_8q1ps7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Se1e08eef1afd4b1f86051357e0758749L_d8698465-f04d-48d6-8cdc-8dac0d46ded6.webp",
+        "image_alt": "Ultimate Ankle Support Brace",
+        "layout": "image_first"
+      }
+    },
+    "imageWithBenefits_0_inr4y8": {
+      "type": "pp-image-with-benefits-v1-0-0",
+      "blocks": {
+        "benefit_tw3cc1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🏃‍♂️",
+            "title": "Enhanced Agility",
+            "description": "Boosts your confidence during runs, preventing injuries."
+          }
+        },
+        "benefit_77l34d": {
+          "type": "benefit",
+          "settings": {
+            "icon": "👟",
+            "title": "All-day Comfort",
+            "description": "Breathable design keeps your ankle cool and comfy."
+          }
+        },
+        "benefit_cgsbr5": {
+          "type": "benefit",
+          "settings": {
+            "icon": "⚽",
+            "title": "Sports Ready",
+            "description": "Delivers support during high-impact activities."
+          }
+        },
+        "benefit_n0pkpf": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🛡️",
+            "title": "Injury Prevention",
+            "description": "Reduces risk of sprains with bi-directional straps."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_tw3cc1",
+        "benefit_77l34d",
+        "benefit_cgsbr5",
+        "benefit_n0pkpf"
+      ],
+      "settings": {
+        "heading": "Experience Unmatched Ankle Stability Today",
+        "subtitle": "Our ankle brace ensures your feet stay secure and supported, reducing pain and enhancing performance.",
+        "image": "shopify://shop_images/S9c95fbcb643c45e2a45019c339889955u_b2fb9224-ea6e-49cb-ac3f-acb8556bc468.webp"
+      }
+    },
+    "faqs_0_q7rt6u": {
+      "type": "pp-faqs-v1-0-0",
+      "blocks": {
+        "faq_1hg351": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does this brace prevent sprains?",
+            "answer": "The brace uses a bi-directional strap system to stabilize tendons and support the ankle, significantly reducing the chance of sprains during physical activities."
+          }
+        },
+        "faq_46inya": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can it be worn with shoes?",
+            "answer": "Yes, its ultra-thin design ensures it fits comfortably under most shoes without causing discomfort or bulkiness."
+          }
+        },
+        "faq_3xrfmj": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this brace suitable for sports?",
+            "answer": "Absolutely, it provides the necessary support and stability for various sports, enhancing performance and reducing injury risk."
+          }
+        },
+        "faq_g1wp19": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What sizes are available?",
+            "answer": "The brace comes in multiple sizes to ensure a perfect fit for every user, providing optimal support and comfort."
+          }
+        },
+        "faq_7debt6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I clean this ankle brace?",
+            "answer": "The brace is easy to clean with mild soap and water. Allow it to air dry completely before wearing again."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1hg351",
+        "faq_46inya",
+        "faq_3xrfmj",
+        "faq_g1wp19",
+        "faq_7debt6"
+      ],
+      "settings": {
+        "heading": "Common Questions About Our Ankle Brace",
+        "description": "Your answer might be here! Find the answers most valued by our customers.",
+        "button_behaviour": "scroll_to_top",
+        "button_label": "Get Mine Now",
+        "button_link": ""
+      }
+    },
+    "reviewGrid_euiykj": {
+      "type": "pp-review-grid-v1-0-0",
+      "blocks": {
+        "review_l0aa8o": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Se8cb94e9690a412dba54f5fd20f33058a.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Both sides are fine, ankle movement is okay, and it holds just right, so it seems good to wear while working normally. The grip is nice; it holds perfectly even when applying force. \n I highly recommend this."
+          }
+        },
+        "review_210m4c": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S6ca581c4f6964d29b93bb01f06a131d7A.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It feels like it protects the ankle well. I think it was a good purchase. It definitely feels like it provides more protection than not using it."
+          }
+        },
+        "review_izra38": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S6a61f3c59432409f87140988bd6bfe6eG.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It fits the ankle well! It's great."
+          }
+        },
+        "review_k38crw": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S579bd67efd974709a746d63129e4464bA.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I plan to use it when walking a lot. It's a good product."
+          }
+        },
+        "review_6egbw0": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S70478b69bf3b4be8a860c9c212f7b43cw.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Last time I bought it because my family said they needed it. \n I purchased additionally. \n This method securely wraps and holds the entire ankle. \n Rather than products made of spandex sold at pharmacies \n It's even better when used during exercise."
+          }
+        },
+        "review_9eo57y": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S452eccaf84f9468d8344b892dcfa32f29.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I bought it really cheaply during the event. It's surprising that I could buy it at this price. I'm completely satisfied. I'm confident that it's a good product to stock up on. I like it, completely satisfied. I'm confident that it's a good product to stock up on. I like it."
+          }
+        },
+        "review_iw43q2": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A2b3428e686fd4bb28b94bc28740069f4V.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I am satisfied with the product and the seller, I recommend it to everyone. Thank you for the fast delivery in the consolidated package by AliExpress and Nova Poshta."
+          }
+        },
+        "review_tym1nh": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Aba117fed2d0a4e6e8162270cd913bb0fb.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Good quality price, I recommend."
+          }
+        },
+        "review_3geqwu": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S533e26156f824c0192995806c2600be5K.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It's thin and good, but it would be even better if there was a small size. I wear about 250 shoes, but these are a bit too big."
+          }
+        },
+        "review_4hvtle": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A5fd00ec53cef43e9b9e34ab9a8f21043n.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Arrived quickly. Size L matches the description."
+          }
+        },
+        "review_sg52dj": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S7c9ef2794f0c45389cd19e83d89c5cb62.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It's exactly worth the money."
+          }
+        },
+        "review_f1o54h": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S9f5149900b9b4bd4b651bb8b0fbfa64a7.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "great"
+          }
+        },
+        "review_1sg3c6": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Ac073638a243f4e4aa9ee68044c3dc5b64.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Beautifully packaged, looks good, relatively expensive and completely useless for me. I took size L. But it's designed for a maximum of size 40-41. Then it might fit."
+          }
+        },
+        "review_2dget0": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S073f0c8e5d9e4ddaa443b0de8e806dc8K.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I went to the swimming pool~~ \n Do you like swimming?"
+          }
+        },
+        "review_dkosml": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A40577bfb3f414c6db3c49b787b6dd5b4Q.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Arrived quickly"
+          }
+        },
+        "review_pdni9k": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Sf75f332a3afb436b95d1f07974778decr.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "The packaging is neat and it looks simple before wearing."
+          }
+        },
+        "review_ecoszy": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Aea2d60048e3341c58f8801d5f5f4def1E.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "👍 👍 😊 👍 👍"
+          }
+        },
+        "review_6reccx": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Sb459e6e289d149a8a5d6f2e3bb32f37cd.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Fast shipping! \n Very good product! Careful packaging too! 👌 \n Shopping on aliexpress is the joy of life! 👌 ✨ ✨"
+          }
+        },
+        "review_wef8j5": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Se10dbb6edad34fb4b9986766d443945f9.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I used it about twice while stretching. \n It firmly holds the ankle well. \n Because it touches the concave part of the sole \n There aren't many foreign objects either. \n It's a very good product that tightly grips the ankle. \n Highly recommended."
+          }
+        }
+      },
+      "block_order": [
+        "review_l0aa8o",
+        "review_210m4c",
+        "review_izra38",
+        "review_k38crw",
+        "review_6egbw0",
+        "review_9eo57y",
+        "review_iw43q2",
+        "review_tym1nh",
+        "review_3geqwu",
+        "review_4hvtle",
+        "review_sg52dj",
+        "review_f1o54h",
+        "review_1sg3c6",
+        "review_2dget0",
+        "review_dkosml",
+        "review_pdni9k",
+        "review_ecoszy",
+        "review_6reccx",
+        "review_wef8j5"
+      ],
+      "settings": {
+        "heading": "What Men Love About This Brace"
+      }
+    },
+    "recommendedProducts_0_vcodfb": {
+      "type": "pp-recommended-products-v1-0-0",
+      "settings": {
+        "heading": "Recommended Products"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "imageWithText_vr9nh4",
+    "imageWithBenefits_0_inr4y8",
+    "faqs_0_q7rt6u",
+    "reviewGrid_euiykj",
+    "recommendedProducts_0_vcodfb"
+  ]
+}
