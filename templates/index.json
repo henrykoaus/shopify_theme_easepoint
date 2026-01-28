@@ -122,7 +122,8 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 100,
+            "image": "shopify://shop_images/aussie_lifestyle_fa95a424-3162-455a-a0e1-671f6c1b6219.png",
+            "image_width": 120,
             "title": "Aussie Lifestyle",
             "text": "<p>Designed for our Aussie style and life</p>",
             "button_label": "",
@@ -133,7 +134,8 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 100,
+            "image": "shopify://shop_images/simplify_your_day.png",
+            "image_width": 120,
             "title": "Simplify Your Day",
             "text": "<p>Turn your daily struggles into simple/effortless routines.</p>",
             "button_label": "",
@@ -144,7 +146,8 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 100,
+            "image": "shopify://shop_images/free_shipping.png",
+            "image_width": 120,
             "title": "Free Shipping",
             "text": "<p>Delivery to your door with zero hidden costs.</p>",
             "button_label": "",
@@ -155,7 +158,8 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 100,
+            "image": "shopify://shop_images/return.png",
+            "image_width": 120,
             "title": "7 Days Return",
             "text": "<p>Shop with total confidence thanks to our 7-day full refund guarantee.</p>",
             "button_label": "",
