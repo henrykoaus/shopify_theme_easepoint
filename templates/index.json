@@ -64,8 +64,9 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
-            "title": "",
-            "collection_link": "",
+            "title": "Ultimate Knee Support Pads",
+            "collection_link": "shopify://products/1pc-sports-kneepad-men-women-pressurized-elastic-knee-pads-arthritis-joints-protector-fitness-gear-volleyball-brace-protector",
+            "collection_image": "shopify://shop_images/S3bed8237282440da91e92f47fc8580dfN_73d99ecb-b5e8-4404-985d-04134f50e8c6.webp",
             "hide_in_mobile": false
           }
         },
@@ -73,8 +74,9 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
-            "title": "",
-            "collection_link": "",
+            "title": "Ultimate Ankle Support Brace",
+            "collection_link": "shopify://products/1pc-cooper-ankle-support-compression-foot-sleeves-for-men-and-women-bracer-ankle-protector-daily-sport-gym-workout-weightlifting",
+            "collection_image": "shopify://shop_images/S4c8ab3624fdf4bef9ced2713294430f6i.webp",
             "hide_in_mobile": false
           }
         },
