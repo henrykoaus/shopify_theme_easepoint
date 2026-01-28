@@ -1,0 +1,530 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "reviewNumbers_0_60ba6o": {
+          "type": "pp_review_numbers",
+          "settings": {
+            "rating": 5,
+            "stars_color": "#facc15",
+            "review_count": 755,
+            "review_text": "Reviews"
+          }
+        },
+        "productTitle_3vvl17": {
+          "type": "title",
+          "settings": {}
+        },
+        "benefit_2m0yzc": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Enhance Stability During Workouts",
+            "text_style": "body"
+          }
+        },
+        "benefit_kkzx6l": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Alleviate Knee Pain Instantly",
+            "text_style": "body"
+          }
+        },
+        "benefit_zyaqt8": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Increase Flexibility In Motion",
+            "text_style": "body"
+          }
+        },
+        "benefit_33hs2j": {
+          "type": "pp_text",
+          "settings": {
+            "text": "✔️ Boost Confidence On-the-Go",
+            "text_style": "body"
+          }
+        },
+        "Divider_4_ax50zp": {
+          "type": "pp_divider",
+          "settings": {}
+        },
+        "productPrice_go7ayv": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_0_5crel5": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "variantPicker_hk1ei5": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "productBuyButton_kffvkn": {
+          "type": "buy_buttons",
+          "settings": {}
+        },
+        "reviewBlock_0_yfkbq5": {
+          "type": "pp_review_block",
+          "settings": {
+            "rating": 5,
+            "stars_color": "#facc15",
+            "image": "shopify://shop_images/man17.webp",
+            "review": "\"Product review goes here. To edit it hover the text and click on the pencil icon. Add an authentic review and click on Save button.\"",
+            "name": "Harry"
+          }
+        },
+        "Divider_3_263jfw": {
+          "type": "pp_divider",
+          "settings": {}
+        },
+        "expandable_tjn98c": {
+          "type": "pp_expandable_text",
+          "settings": {
+            "title": "Shipping Information",
+            "content": "<p>We provide insured and tracked shipping for every order. The estimated delivery times after shipment are as follows: USA: 3-7 business days, UK: 7-18 business days, Australia: 7-18 business days, Canada: 7-18 business days, Europe: 7-18 business days, Rest of the world: 14-20 business days.</p>",
+            "icon": "globe"
+          }
+        },
+        "expandable_nx9rqp": {
+          "type": "pp_expandable_text",
+          "settings": {
+            "title": "Return Policy",
+            "content": "<p>We have a strong affection for our products, and we believe that you will share the same sentiment. Therefore, we are providing a 30-Day Trial, free from any risks.\nIf you are not fully satisfied with the outcome, we will reimburse you.</p>",
+            "icon": "back"
+          }
+        }
+      },
+      "block_order": [
+        "reviewNumbers_0_60ba6o",
+        "productTitle_3vvl17",
+        "benefit_2m0yzc",
+        "benefit_kkzx6l",
+        "benefit_zyaqt8",
+        "benefit_33hs2j",
+        "Divider_4_ax50zp",
+        "productPrice_go7ayv",
+        "quantity_0_5crel5",
+        "variantPicker_hk1ei5",
+        "productBuyButton_kffvkn",
+        "reviewBlock_0_yfkbq5",
+        "Divider_3_263jfw",
+        "expandable_tjn98c",
+        "expandable_nx9rqp"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "heading_font_size": 24,
+        "body_font_size": 16,
+        "pp_heading_color": "#000000",
+        "pp_body_color": "#000000",
+        "pp_brand_color": "#8d8d8d",
+        "pp_button_background_color": "#000000",
+        "pp_button_text_color": "#FFFFFF",
+        "pp_border_radius": 16
+      }
+    },
+    "imageWithText_8a1u91": {
+      "type": "pp-image-with-text-v1-0-0",
+      "blocks": {
+        "heading_j3hmca": {
+          "type": "heading",
+          "settings": {
+            "heading": "Struggling with knee pain during workouts?"
+          }
+        },
+        "text_agxus0": {
+          "type": "text",
+          "settings": {
+            "text": "Our ComfortFlex Knee Support offers targeted compression to ease discomfort, allowing you to perform at your best without the worry of knee strain. Feel more confident and supported with every move."
+          }
+        },
+        "button_vhw11w": {
+          "type": "button",
+          "settings": {
+            "button_behaviour": "scroll_to_top",
+            "button_label": "Get Mine Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_j3hmca",
+        "text_agxus0",
+        "button_vhw11w"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Sabac1abe5c114426840d276f5fc91dbb9_83428ed3-12d7-428d-8253-32e9d78856d3.webp",
+        "image_alt": "ComfortFlex Knee Support",
+        "layout": "image_first"
+      }
+    },
+    "imageWithBenefits_0_9v9i9j": {
+      "type": "pp-image-with-benefits-v1-0-0",
+      "blocks": {
+        "benefit_i44jun": {
+          "type": "benefit",
+          "settings": {
+            "icon": "💪",
+            "title": "Boost Strength",
+            "description": "Feel empowered with improved knee support during workouts and activities."
+          }
+        },
+        "benefit_j1i8ob": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🕒",
+            "title": "Save Time",
+            "description": "Put it on in seconds with ease, perfect for busy schedules."
+          }
+        },
+        "benefit_l8orvn": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🏃",
+            "title": "Move Freely",
+            "description": "Enjoy unrestricted movement with its flexible design."
+          }
+        },
+        "benefit_q76xto": {
+          "type": "benefit",
+          "settings": {
+            "icon": "😊",
+            "title": "Feel Confident",
+            "description": "Gain peace of mind knowing your knees are supported."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_i44jun",
+        "benefit_j1i8ob",
+        "benefit_l8orvn",
+        "benefit_q76xto"
+      ],
+      "settings": {
+        "heading": "Experience Pain-Free Movement Every Day",
+        "subtitle": "Discover how ComfortFlex transforms your daily activities by providing relief and support, enhancing your quality of life.",
+        "image": "shopify://shop_images/Sbccf4ff27a544bb6a6af18eb503de19aE_6c3f73d7-30c0-4dee-b859-8d67326d97e1.webp"
+      }
+    },
+    "faqs_0_5suk30": {
+      "type": "pp-faqs-v1-0-0",
+      "blocks": {
+        "faq_2lsjef": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How does this knee support relieve pain?",
+            "answer": "It provides targeted compression, reducing strain and alleviating discomfort during movement."
+          }
+        },
+        "faq_536gzf": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is it suitable for intense physical activities?",
+            "answer": "Yes, it's designed for athletes, offering excellent support during high-impact sports."
+          }
+        },
+        "faq_w1zgdn": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will it fit under clothing comfortably?",
+            "answer": "Absolutely, its slim design ensures a discreet fit under clothes without bulkiness."
+          }
+        },
+        "faq_hjjgoq": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can it be worn all day?",
+            "answer": "Yes, thanks to its breathable and elastic fabric, it's comfortable for extended wear."
+          }
+        },
+        "faq_3ion2z": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I choose the right size?",
+            "answer": "Refer to our sizing chart for accurate measurements to ensure a perfect fit."
+          }
+        }
+      },
+      "block_order": [
+        "faq_2lsjef",
+        "faq_536gzf",
+        "faq_w1zgdn",
+        "faq_hjjgoq",
+        "faq_3ion2z"
+      ],
+      "settings": {
+        "heading": "Everything You Need to Know About ComfortFlex",
+        "description": "Your answer might be here! Find the answers most valued by our customers.",
+        "button_behaviour": "scroll_to_top",
+        "button_label": "Get Mine Now",
+        "button_link": ""
+      }
+    },
+    "reviewGrid_734al0": {
+      "type": "pp-review-grid-v1-0-0",
+      "blocks": {
+        "review_9q9sw0": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A96ccad3641304177b0dfffedf2ff187cx.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I go to the gym and weigh 75kg, I train my legs and when I put it on I thought it was going to come undone. So it's up to you to buy 1 size larger than what you have in mind. \n \n Today I used it at the gym and the feeling is magnificent. It supported me a lot so I recommend it."
+          }
+        },
+        "review_gfmj76": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A1e18c05a9af245b7b4326f92860e41cag.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Good product. \n Fair cost benefit. Looking at it, I didn't trust the function as much because it seemed like a delicate material, but it is indeed very sturdy. It guarantees good stability and should not mark under clothing. Product of great quality and exactly as advertised."
+          }
+        },
+        "review_4v7c45": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A8cc6c3e85297473190326cbd3024e2844.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I really liked it just like the image, I highly recommend them for the price and quality."
+          }
+        },
+        "review_hfjgxh": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A7368e200524b403b913f9172feaf85faA.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It is a very good product, made of excellent material, soft to the touch. The side adjusters firmly secure the knee support very well."
+          }
+        },
+        "review_txu5te": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S2098fd9fc2b84d8ba6be1dbb3d7941b9Y.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It's not practical to wear while going out, but it's perfect for doing at home. It provides good support and is sturdy."
+          }
+        },
+        "review_wy5ti0": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Af94338042a21476eafe33c99890c186fT.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I liked it, it has the padding and it looks like it's made of good material."
+          }
+        },
+        "review_3anxos": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A650110ddd5674894bf21d52debbfc5f0K.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Very good product meets the quality and expectations of its function."
+          }
+        },
+        "review_uhlhf1": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Af5993157d4aa4f98b8c10594ce3fadd35.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Looks good quality, very comfortable and practical, thank you recommended seller, fast shipping."
+          }
+        },
+        "review_y8gzdw": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A3ba8d75c99754d86a0f8eff171662c83V.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Excellent product... feels of very good quality... looks good... thanks to the seller... arrived earlier than expected..."
+          }
+        },
+        "review_8cduw7": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Af6683c1da7e74278ba09887834e94edbK.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It arrived in almost 10 days, I already used it and it fits well."
+          }
+        },
+        "review_0muir9": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Sd58c9a70f04c48a480d7825e55b7552dT.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I successfully purchased a good product at a low price."
+          }
+        },
+        "review_j2eb2j": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A220dece57c92498f94a641c3be500382X.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "functions adequately"
+          }
+        },
+        "review_w6hphc": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Ac3d25d1e09fd4fd987c806ca881aac4dy.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Good purchase"
+          }
+        },
+        "review_v0nv7h": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Sfc9e0818e99143998857fc09a2b8e85fz.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I will use it well."
+          }
+        },
+        "review_wzxvt8": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A8f58967aec9549cc9d7783ebc2857e32R.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "Everything is fine, thank you 🙂👍🇺🇦"
+          }
+        },
+        "review_614d70": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S95b501bc437646a7b63b0548b9929debP.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It's quite useful."
+          }
+        },
+        "review_jhrx2a": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/A76476ccd23474037bc746fb7e46225dfW.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I ordered size CH but it didn't fit me, it's like for a small child aged 10-12. It's not suitable for an adult. For a 60kg person, it's better to order size G."
+          }
+        },
+        "review_klmdhk": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S751aabf8e6f34ec9acc6c0970cbcfefaN.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "I will use it well, thank you."
+          }
+        },
+        "review_w7bkm0": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S806a4e04dea64812ba049f5061c06c2cI.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "The size doesn't fit my knees, but it fits my calves. If it doesn't fit me, it seems like it would be too small for others too. I tried it on my calves and left. \n Yesterday I went to the gym and my calves were slightly sore, but it's a bit better now. \n It's a pity that the size is small."
+          }
+        },
+        "review_8341ox": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/S105d516c7cee4e0f9f4428a739a472060.webp",
+            "name": "",
+            "verified_text": "Verified Buyer",
+            "rating": 5,
+            "review_text": "It's quite useful."
+          }
+        }
+      },
+      "block_order": [
+        "review_9q9sw0",
+        "review_gfmj76",
+        "review_4v7c45",
+        "review_hfjgxh",
+        "review_txu5te",
+        "review_wy5ti0",
+        "review_3anxos",
+        "review_uhlhf1",
+        "review_y8gzdw",
+        "review_8cduw7",
+        "review_0muir9",
+        "review_j2eb2j",
+        "review_w6hphc",
+        "review_v0nv7h",
+        "review_wzxvt8",
+        "review_614d70",
+        "review_jhrx2a",
+        "review_klmdhk",
+        "review_w7bkm0",
+        "review_8341ox"
+      ],
+      "settings": {
+        "heading": "Customers Love the Relief and Support!"
+      }
+    },
+    "recommendedProducts_0_x36y1n": {
+      "type": "pp-recommended-products-v1-0-0",
+      "settings": {
+        "heading": "Recommended Products"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "imageWithText_8a1u91",
+    "imageWithBenefits_0_9v9i9j",
+    "faqs_0_5suk30",
+    "reviewGrid_734al0",
+    "recommendedProducts_0_x36y1n"
+  ]
+}
