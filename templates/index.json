@@ -123,8 +123,8 @@
           "settings": {
             "enable_image": true,
             "image_width": 100,
-            "title": "Benefit 1",
-            "text": "<p>Explain the benefit in a sentence</p>",
+            "title": "Aussie Lifestyle",
+            "text": "<p>Designed for our Aussie style and life</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -134,8 +134,8 @@
           "settings": {
             "enable_image": true,
             "image_width": 100,
-            "title": "Benefit 2",
-            "text": "<p>Explain the benefit in a sentence</p>",
+            "title": "Simplify Your Day",
+            "text": "<p>Turn your daily struggles into simple/effortless routines.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -145,8 +145,8 @@
           "settings": {
             "enable_image": true,
             "image_width": 100,
-            "title": "Benefit 3",
-            "text": "<p>Explain the benefit in a sentence</p>",
+            "title": "Free Shipping",
+            "text": "<p>Delivery to your door with zero hidden costs.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -156,8 +156,8 @@
           "settings": {
             "enable_image": true,
             "image_width": 100,
-            "title": "Guarantee",
-            "text": "<p>Explain the benefit in a sentence</p>",
+            "title": "7 Days Return",
+            "text": "<p>Shop with total confidence thanks to our 7-day full refund guarantee.</p>",
             "button_label": "",
             "button_link": ""
           }
