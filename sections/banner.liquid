@@ -45,27 +45,17 @@
                 <div
                   class="image-wra"
                 >
-                  {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img
-                    class=""
-                    src="{{ block.settings.image | img_url: '1900x'  }}"
-                    class:image_class,
-                    loading:lazy,
-                    height=""
-                    width=""
-                    alt="{{ block.settings.image.alt }}"
-                  >
-                  <noscript>
-                    <img
-                      class="lazyloaded"
-                      src="{{ block.settings.image | img_url: '400x' }}"
-                      alt="{{ block.settings.image.alt }}"
-                      class:image_class,
-                      loading:lazy,
-                      height=""
-                      width=""
-                    >
-                  </noscript>
+                  {%- assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio -%}
+                  {{
+                    block.settings.image
+                    | image_url: width: 3840
+                    | image_tag:
+                      width: block.settings.image.width,
+                      height: image_height,
+                      loading: 'lazy',
+                      sizes: '100vw',
+                      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                  }}
                 </div>
               {%- else -%}
                 <div class="image-wrap">

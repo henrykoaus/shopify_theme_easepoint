@@ -15,12 +15,15 @@
             <div>
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
                 <div class="image-wrp">
-                  {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img class="feature-row__image"
-                      src="{{ section.settings.image | img_url: '1000x' }}" width="" height=""
-                      class: image_class,
-                      loading: lazy,
-                      alt="{{ section.settings.image.alt }}" >
+                  {{
+                    section.settings.image
+                    | image_url: width: 1000
+                    | image_tag:
+                      class: 'feature-row__image',
+                      loading: 'lazy',
+                      widths: '550, 750, 1000, 1500',
+                      alt: section.settings.image.alt
+                  }}
                 </div>
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
             </div>
@@ -29,15 +32,15 @@
             <div>
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
                 <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image2.aspect_ratio }}%;">
-                  {%- assign img_url = section.settings.image2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img class="feature-row__image lazyload"
-                    data-src="{{ img_url }}"
-                    class: image_class,
-                    loading: lazy,
-                    data-widths="[180, 360, 540, 750, 900, 1080]"
-                    data-aspectratio="{{ section.settings.image2.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ section.settings.image2.alt }}" width="" height="">
+                  {{
+                    section.settings.image2
+                    | image_url: width: 1000
+                    | image_tag:
+                      class: 'feature-row__image',
+                      loading: 'lazy',
+                      widths: '550, 750, 1000, 1500',
+                      alt: section.settings.image2.alt
+                  }}
                 </div>
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
             </div>
@@ -68,13 +71,13 @@
       >
         {%- if section.settings.icon != blank -%}
           <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %}">
-            <img
-              src="{{section.settings.icon | img_url: '1000x'}}"
-              class:image_class,
-              loading:lazy,
-              height=""
-              width=""
-            >
+            {{
+              section.settings.icon
+              | image_url: width: 1000
+              | image_tag:
+                loading: 'lazy',
+                widths: '550, 750, 1000'
+            }}
           </div>
         {%- endif -%}
         {%- if section.settings.subtitle != blank -%}
