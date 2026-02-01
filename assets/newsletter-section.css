@@ -41,7 +41,9 @@
   margin-top: 3rem;
   width: fit-content;
 }
-
+.newsletter__wrapper .newsletter-form__field-wrapper {
+    min-width: 48rem;
+}
 @media screen and (min-width: 750px) {
   .newsletter__button {
     flex-shrink: 0;

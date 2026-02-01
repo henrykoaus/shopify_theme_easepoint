@@ -8,20 +8,22 @@
     }
   }
 {%- endstyle -%}
-
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
+{%- if section.settings.show_collection_header -%}
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient {%- if section.settings.show_collection_image and collection.image -%} has-image {% endif %}" style="{%- if section.settings.show_collection_image and collection.image -%} background-image:url({{ collection.image | image_url: width: 750 }}); {%- endif -%}">
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">
+      <h2>
+        Shop All Products
+      </h2>
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
-
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
     </div>
-
+  {% comment %}
     {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media gradient">
         <img
@@ -36,15 +38,22 @@
           "
           src="{{ collection.image | image_url: width: 750 }}"
           sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-          alt="{{ collection.image.alt | escape }}"
+          alt=""
           width="{{ collection.image.width }}"
           height="{{ collection.image.height }}"
         >
       </div>
     {%- endif -%}
+  {% endcomment %}
   </div>
 </div>
+{% endif %}
 
+<script>
+  if (document.querySelector('.header_overlay-collection')){
+    document.querySelector('.collection-hero').classList.add('overlay_collection-active')
+}
+</script>
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
@@ -64,7 +73,20 @@
       "type": "checkbox",
       "id": "show_collection_image",
       "default": false,
-      "label": "t:sections.main-collection-banner.settings.show_collection_image.label"
+      "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
+      "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_header",
+      "default": true,
+      "label": "t:sections.main-collection-banner.settings.show_collection_header.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_header_parallax",
+      "default": true,
+      "label": "t:sections.main-collection-banner.settings.show_collection_header_parallax.label"
     },
     {
       "type": "color_scheme",

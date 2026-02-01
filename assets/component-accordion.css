@@ -2,7 +2,11 @@
   display: flex;
   position: relative;
   line-height: 1;
-  padding: 1.5rem 0;
+      padding: 24px 0;
+    width: 100%;
+  justify-content:space-between;
+  align-items:center;
+  
 }
 
 .accordion .summary__title {
@@ -32,9 +36,12 @@
   min-height: 1.6rem;
   margin: 0;
   word-break: break-word;
+    font-size: 22px;
+    font-weight: 600;
+  letter-spacing:0.05rem;
 }
 
-.accordion .svg-wrapper {
+.accordion .icon-accordion {
   align-self: center;
   fill: rgb(var(--color-foreground));
   height: calc(var(--font-heading-scale) * 2rem);
@@ -55,4 +62,17 @@
 
 .accordion__content img {
   max-width: 100%;
+}
+details summary svg.icon.icon-plus{
+  height:15px;
+  width:15px;
+}
+details[open] summary svg.icon.icon-plus {
+    transform: rotate(45deg);
+}
+.accordion__content {
+    padding-bottom: 30px;
+}
+.accordion:nth-child(1) {
+    border-top: 0;
 }

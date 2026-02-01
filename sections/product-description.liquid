@@ -1,0 +1,20 @@
+{% if product.description != blank %}
+  <div class="product-description-wrap">
+    <div class="page-width">
+      <div class="product-description-contents">
+        {{ product.description }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% schema %}
+  {
+    "name": "Product Description",
+    "settings": [],
+    "presets" : [
+      {
+        "name" : "Product Description"
+      }
+    ]
+  }
+{% endschema %}
