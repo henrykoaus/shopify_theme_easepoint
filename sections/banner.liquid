@@ -1,0 +1,87 @@
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+  {%- if section.settings.divider -%}<div class="section-header"><hr class="section-header__divider"></div>{%- endif -%}
+  
+  <div class="banner-section text-{{ section.settings.align_text }} {% if section.settings.hide_on_mobile %} small-hide{% endif %}">
+    {%- if section.settings.bg != blank -%}
+        <div class="banner__media media">
+            {{ section.settings.bg | image_url: width: 2000 | image_tag: widths: '375, 550, 750, 1100, 1500, 2000', sizes: '100vw' }}
+        </div>
+    {%- endif -%}
+
+    <div class="banner__content">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'banner' -%}
+            <div class="banner__block">
+                {% comment %} Placeholder for banner block content if any {% endcomment %}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background Image"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_column",
+      "label": "Narrow column",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "Show divider",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_on_mobile",
+      "label": "Hide on mobile",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner Block",
+      "settings": []
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner"
+    }
+  ]
+}
+{% endschema %}
