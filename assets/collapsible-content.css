@@ -100,17 +100,15 @@
   padding-top: 0;
 }
 
-/* .collapsible-content summary:hover {
+.collapsible-content summary:hover {
   background: rgba(var(--color-foreground), 0.04);
-} */
+}
 
 .collapsible-content summary:hover .accordion__title {
-  /* text-decoration: underline; */
+  text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
-.collapsible-content__heading{
-  letter-spacing:0;
-}
+
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (min-width: 750px) {
@@ -127,27 +125,4 @@
       padding-left: 7rem;
     }
   }
-}
-@media(max-width:769px){
-    .accordion{
-    margin-top:0;
-  }
-h3.accordion__title {
-    padding: 10px 0;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 300;
-    
-}
-.accordion summary{
-  padding:0;
-}
-  details summary svg.icon.icon-plus{
-    height:10px;
-    width:10px;
-  }
-  .collapsible-content__heading {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
 }

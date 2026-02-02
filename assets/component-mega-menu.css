@@ -14,9 +14,6 @@
   position: absolute;
   right: 0;
   top: 100%;
-  transition: .5s ease-in;
-  box-shadow: 0 10px 20px #00000017;
-  z-index:1;
 }
 
 .shopify-section-header-sticky .mega-menu__content {
@@ -35,10 +32,6 @@
 .mega-menu[open] .mega-menu__content {
   opacity: 1;
   transform: translateY(0);
-  display: block;
-  visibility: visible;
-  transform: translateZ(0);
-  transition: all .3s cubic-bezier(.2,.06,.05,.95)
 }
 
 .mega-menu__list {

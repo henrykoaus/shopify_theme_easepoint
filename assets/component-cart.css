@@ -40,6 +40,7 @@ cart-items.is-empty .title-wrapper-with-link,
 .cart__login-paragraph a {
   font-size: inherit;
 }
+
 @media screen and (min-width: 990px) {
   .cart__warnings {
     padding: 7rem 0 1rem;
@@ -49,6 +50,7 @@ cart-items.is-empty .title-wrapper-with-link,
     margin: 0 0 3rem;
   }
 }
+
 cart-items {
   display: block;
 }
@@ -63,9 +65,9 @@ cart-items {
   pointer-events: none;
 }
 
-/* .cart__footer-wrapper:last-child .cart__footer {
+.cart__footer-wrapper:last-child .cart__footer {
   padding-bottom: 5rem;
-} */
+}
 
 .cart__footer > div:only-child {
   margin-left: auto;
@@ -118,7 +120,7 @@ cart-items {
   .cart__items {
     grid-column-start: 1;
     grid-column-end: 3;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
 
   .cart__contents > * + * {
@@ -140,7 +142,7 @@ cart-items {
   }
 
   .cart__footer > * {
-    width: 43.5rem;
+    width: 35rem;
   }
 
   .cart__footer > * + * {
@@ -149,11 +151,11 @@ cart-items {
   }
 }
 
-/* .cart__ctas button {
+.cart__ctas button {
   width: 100%;
-} */
+}
 
-.cart__ctas > *:not(noscript:first-child) + * {
+.cart__ctas > * + * {
   margin-top: 1rem;
 }
 
@@ -168,10 +170,6 @@ cart-items {
 
 .cart__dynamic-checkout-buttons:has(.dynamic-checkout__content:empty) {
   margin: 0;
-}
-
-.cart__dynamic-checkout-buttons div[role='button'] {
-  border-radius: var(--buttons-radius-outset) !important;
 }
 
 .cart__blocks > * + * {
@@ -196,7 +194,6 @@ cart-items {
 
 .cart__ctas {
   text-align: center;
-  margin-bottom:20px;
 }
 
 @media screen and (min-width: 750px) {
@@ -221,155 +218,5 @@ cart-items {
   .cart__ctas {
     display: flex;
     gap: 1rem;
-    justify-content:flex-end;
   }
-}
-.shipping_protection_wrap {
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 0 !important;
-    padding-bottom: 0;
-    font-weight: 400;
-    font-size: 18px !important;
-    color: #000;
-    margin: 0;
-    text-transform: unset !important;
-      margin-bottom: 10px;
-  position:relative;
-}
-.shipping_protection_wrap label {
-    letter-spacing: 0 !important;
-    padding-bottom: 0;
-    font-weight: 400;
-    font-size: 18px !important;
-    color: #000;
-    margin: 0;
-    text-transform: unset !important;
-}
-.shipping_protection_wrap input[type="checkbox"] {
-  position: relative;
-  cursor: pointer;
-}
-.shipping_protection_wrap input[type=checkbox] {
-    cursor: pointer;
-    appearance: none;
-    height: 0;
-    width: 0;
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  margin-top:8px;
-}
-.shipping_protection_wrap input[type="checkbox"]:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  right: 0;
-  border: 2px solid #cb2e2e;
-  border-radius: 50%;
-  background-color: white;
-}
-.shipping_protection_wrap input[type="checkbox"]:checked:after {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 10px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-      top: 4px;
-    right: 8px;
-  
-}
-.shipping_protection_wrap input[type="checkbox"]:checked:before{
-    background-color:#cb2e2e;
-
-}
-.totals{
-   font-weight: 400;
-    font-size: 18px !important;
-    color: #000;
-    margin: 0;
-    text-transform: unset !important;
-  justify-content:flex-end;
-  gap:85px;
-}
-.tax-note {
-    font-size: 14px;
-    text-align: right;
-    margin-top: 20px !important;
-    margin-bottom: 15px !important;
-}
-.totals *{
-      font-size: 18px !important;
-    color: #000;
-}
-/* button#checkout {
-    width: 100% !important;
-    max-width: 100%;
-} */
-dl .product-option {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0;
-}
-h1.title.title--primary {
-    font-size: 32px;
-    /* text-align: center; */
-}
-.d-none{
-  display:none;
-}
-  button#checkout {
-    font-size: 18px;
-    width: 241px;
-}
-@media(max-width:769px){
-  h1.title.title--primary {
-    font-size: 20px;
-  }
-  cart-items .title-wrapper-with-link{
-    margin-bottom:30px;
-  }
-  .product-option{
-    font-size:13px;
-  }
-  .product-option del{
-    font-size:16px;
-    margin-right:4px;
-  }
-  .cart-item__totals{
-    align-items:center;
-  }
-  .cart__ctas {
-    text-align: right;
-}
-  button#checkout {
-    width: 100%;
-}
-}
-@media(max-width:360px){
-  .cart-item__image{
-        max-width: calc(12.5rem / var(--font-body-scale));
-  }
-  td .cart-item__price-wrapper span{
-    font-size:17px;
-  }
-  cart-remove-button .icon-remove {
-    height: 1.3rem;
-    width: 1.3rem;
-}
-  .cart-item cart-remove-button {
-    margin-left: 0.5rem;
-}
-  quantity-popover .quantity {
-    width: 7.8rem;
-}
 }

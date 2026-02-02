@@ -583,3 +583,50 @@ span.grid-product__price--savings {
   }
   
 }
+
+.card.overlayCard .card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  padding: 0;
+}
+
+.card.overlayCard .card__information {
+  padding: 0;
+}
+
+.card.overlayCard .card__heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.card.overlayCard .card__heading a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card.overlayCard .card__heading a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.card.overlayCard .card__media::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Slight overlay for readability */
+  z-index: 1;
+}
+
+.card.overlayCard .full-unstyled-link{
+  display: block;
+}

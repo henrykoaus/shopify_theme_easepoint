@@ -12,12 +12,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  @media screen and (max-width:769px) {
-    .section-{{ section.id }}-padding {
-      padding-top: 30px;
-      padding-bottom: 40px;
-    }
-  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -70,6 +64,14 @@
         {
           "value": "h0",
           "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
       "default": "h1",

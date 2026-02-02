@@ -57,6 +57,33 @@
   .collection-list.slider .collection-list__item {
     max-width: 100%;
   }
+  
+  /* Force 2 items view on mobile/tablet slider */
+  .section-collection-list .slider.grid--2-col-tablet-down {
+    column-gap: 0 !important;
+    padding-left: 1.5rem;   /* Start of list padding */
+    padding-right: 1.5rem;  /* End of list padding */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .section-collection-list .slider.grid--2-col-tablet-down .collection-list__item {
+    /* 
+       Total width needed for 2 items to reach from 1.5rem (left pad) to 100vw (right edge):
+       (100vw - 1.5rem) / 2 
+    */
+    width: calc(50vw - 0.75rem);
+    max-width: calc(50vw - 0.75rem);
+    padding-left: 0;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Apply increased spacing if not gapless */
+  .section-collection-list .slider.grid--2-col-tablet-down:not(.grid--gapless) .collection-list__item {
+    padding-right: 3rem; /* Further increased spacing as requested */
+  }
 }
 
 .collection-list-view-all {

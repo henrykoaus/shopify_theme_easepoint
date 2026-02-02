@@ -10,17 +10,11 @@
 
 .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
   margin: auto;
-  max-width: 700px;
+  width: calc(100% - 8rem / var(--font-body-scale));
 }
 
 .rich-text__blocks {
   width: 100%;
-}
-.rich-text__text p {
-    font-size: 18px;
-    color: #000;
-    font-weight: 300;
-  letter-spacing: 0.7px;
 }
 
 @media screen and (min-width: 750px) {
@@ -37,13 +31,13 @@
   }
 
   .rich-text__blocks {
-    max-width: 100%;
+    max-width: 50rem;
   }
 }
 
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
-    max-width: 100%;
+    max-width: 78rem;
   }
 }
 
@@ -89,20 +83,4 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
-}
-@media(max-width:768px){
-  .rich-text__heading{
-  font-size:25px;
-}
-  .rich-text__text p{
-    font-size:16px;
-  }
-    h2.rich-text__heading{
-        font-size: 24px;
-    line-height: 29px;
-  }
-  .rich-text-section p{
-        font-size: 18px;
-    line-height: 25px;
-  }
 }

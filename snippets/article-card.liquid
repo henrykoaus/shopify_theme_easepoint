@@ -23,7 +23,6 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-
   <div class="article-card-wrapper card-wrapper underline-links-hover">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div
@@ -138,14 +137,11 @@
                 {%- endif -%}
               </p>
             {%- endif -%}
-            {% if tags == true %} {{ article.tags }} {% endif %}
-            {% if comment == true %}
             <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
               {%- endif -%}
             </div>
-          {% endif %}
           {%- endif -%}
         </div>
         {%- if show_badge -%}

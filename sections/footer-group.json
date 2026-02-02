@@ -1,1 +1,24 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"image_grUWM7":{"type":"image","settings":{"image_width":200,"alignment":"","show_social":true}},"link_list_iph7p4":{"type":"link_list","settings":{"heading":"Explore","menu":"explore"}},"link_list_Hq8qgW":{"type":"link_list","settings":{"heading":"Support","menu":"support"}},"news_letter_XngmjP":{"type":"news_letter","settings":{"newsletter_enable":true,"newsletter_heading":"Enter your email and get 10% OFF!","abn":"ABN: 00000000","email_label":"Enter your email","subscribe_btn":"Get Discount","address":"241 Adelaide Street, Level 1 Suite 1105, Brisbane QLD 4000","reserved":"All Rights Reserved","show_social":true}}},"block_order":["image_grUWM7","link_list_iph7p4","link_list_Hq8qgW","news_letter_XngmjP"],"settings":{"color_scheme":"scheme-5db921c9-99af-4e19-8000-b708f7eaf37f","enable_follow_on_shop":false,"show_social":false,"enable_country_selector":false,"enable_language_selector":false,"payment_enable":true,"show_policy":true,"margin_top":0,"padding_top":60,"padding_bottom":60}}},"order":["footer"]}
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "<strong>Follow on shop with email and get 10% OFF!<\/strong>",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["footer"]
+}
