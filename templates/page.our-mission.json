@@ -15,8 +15,10 @@
           "type": "heading",
           "settings": {
             "heading": "Our Mission",
-            "heading_size": "h2",
-            "heading_color": "#6f6d6d"
+            "heading_size": "h3",
+            "heading_color": "#6f6d6d",
+            "padding_top": 28,
+            "padding_bottom": 20
           }
         },
         "heading_JDTf6T": {
@@ -31,12 +33,15 @@
           "type": "text",
           "settings": {
             "text": "<p>Include a blurb about why you exist and what problem you solve for your customers. Talk about the impact you aim to have on the world and why customers should buy from you instead of your competitors<\/p><p><\/p><p><\/p><p><\/p><p><\/p>",
-            "text_color": ""
+            "text_color": "",
+            "padding_bottom": 20
           }
         }
       },
       "block_order": ["heading_g3aBbm", "heading_JDTf6T", "text_xtTi33"],
-      "custom_css": [],
+      "custom_css": [
+        "h3:first-of-type { font-family: Helvetica, Arial, sans-serif; }"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "class_at_top": true,
@@ -70,7 +75,8 @@
           "settings": {
             "heading": "Here are reasons why you'll love BRAND",
             "heading_size": "h1",
-            "heading_color": ""
+            "heading_color": "",
+            "padding_top": 20
           }
         }
       },
