@@ -39,7 +39,7 @@
       },
       "block_order": ["heading_HVTC7N", "heading_JDTf6T", "text_xtTi33"],
       "custom_css": [
-        "h3:first-of-type { color: #6f6d6d;font-family: Helvetica, Arial, sans-serif; }",
+        "h2:first-of-type { color: #6f6d6d; font-family: Helvetica, Arial, sans-serif; }",
         ".rich-text__text {max-width: 700px; margin: auto;}",
         "p {margin-top: 30px;}"
       ],
