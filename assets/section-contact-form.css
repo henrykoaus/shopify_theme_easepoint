@@ -12,6 +12,9 @@
 
 .contact .field {
   margin-bottom: 1.5rem;
+}
+
+.contact .contact__fields .field .field__input {
   border-radius: 16px;
 }
 
