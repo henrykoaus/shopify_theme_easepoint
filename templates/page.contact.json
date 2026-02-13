@@ -39,7 +39,7 @@
       },
       "block_order": ["heading_nkgicP", "heading_hnt7np", "text_wBT8WU"],
       "custom_css": [
-        "h2:first-of-type { color: #6f6d6d; font-size: 20px; font-family: Helvetica, Arial, sans-serif; }"
+        "h2:first-of-type { color: #6f6d6d; font-size: 18px; font-family: Helvetica, Arial, sans-serif; }"
       ],
       "settings": {
         "desktop_content_position": "center",
