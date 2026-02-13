@@ -14,12 +14,6 @@
   margin-bottom: 1.5rem;
 }
 
-#ContactForm-name,
-#ContactForm-email,
-#ContactForm-body {
-  border-radius: 16px !important;
-}
-
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
