@@ -16,7 +16,9 @@
           "settings": {
             "heading": "Contact Us",
             "heading_size": "h2",
-            "heading_color": "#6f6d6d"
+            "heading_color": "#6f6d6d",
+            "padding_top": 28,
+            "padding_bottom": 20
           }
         },
         "heading_hnt7np": {
@@ -36,6 +38,9 @@
         }
       },
       "block_order": ["heading_nkgicP", "heading_hnt7np", "text_wBT8WU"],
+      "custom_css": [
+        "h2:first-of-type { color: #6f6d6d;font-family: Helvetica, Arial, sans-serif; }"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "class_at_top": true,
@@ -51,7 +56,7 @@
       "settings": {
         "heading": "",
         "text": "",
-        "show_phone": true,
+        "show_phone": false,
         "narrow_column": true,
         "heading_size": "h1",
         "color_scheme": "scheme-1",
