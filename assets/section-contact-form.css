@@ -14,8 +14,10 @@
   margin-bottom: 1.5rem;
 }
 
-.field__input {
-  border-radius: 16px;
+form#ContactForm input[type="text"],
+form#ContactForm input[type="email"],
+form#ContactForm textarea {
+  border-radius: 16px !important;
 }
 
 @media screen and (min-width: 750px) {
