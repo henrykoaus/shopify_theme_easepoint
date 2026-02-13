@@ -14,9 +14,9 @@
   margin-bottom: 1.5rem;
 }
 
-form#ContactForm input[type="text"],
-form#ContactForm input[type="email"],
-form#ContactForm textarea {
+#ContactForm-name,
+#ContactForm-email,
+#ContactForm-body {
   border-radius: 16px !important;
 }
 
