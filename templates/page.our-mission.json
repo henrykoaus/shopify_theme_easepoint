@@ -40,7 +40,7 @@
       },
       "block_order": ["heading_g3aBbm", "heading_JDTf6T", "text_xtTi33"],
       "custom_css": [
-        "h2:first-of-type { color: #6f6d6d;font-family: Helvetica, Arial, sans-serif; }"
+        "h2:first-of-type { color: #6f6d6d; font-family: Helvetica, Arial, sans-serif; }"
       ],
       "settings": {
         "desktop_content_position": "center",
