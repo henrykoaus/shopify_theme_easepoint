@@ -3595,3 +3595,16 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Custom Global Image Radius */
+:root {
+  --media-radius: 16px !important;
+  --product-card-corner-radius: 16px !important;
+  --collection-card-corner-radius: 16px !important;
+  --blog-card-corner-radius: 16px !important;
+  --text-boxes-radius: 16px !important;
+}
+
+img:not(.icon):not([class*="icon"]) {
+  border-radius: 16px;
+}
