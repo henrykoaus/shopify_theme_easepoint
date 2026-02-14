@@ -3598,13 +3598,13 @@ details-disclosure > details {
 
 /* Custom Global Image Radius */
 :root {
-  --media-radius: 14px !important;
-  --product-card-corner-radius: 14px !important;
-  --collection-card-corner-radius: 14px !important;
-  --blog-card-corner-radius: 14px !important;
-  --text-boxes-radius: 14px !important;
+  --media-radius: 10px !important;
+  --product-card-corner-radius: 10px !important;
+  --collection-card-corner-radius: 10px !important;
+  --blog-card-corner-radius: 10px !important;
+  --text-boxes-radius: 10px !important;
 }
 
 img:not(.icon):not([class*="icon"]) {
-  border-radius: 14px;
+  border-radius: 10px;
 }
