@@ -112,7 +112,7 @@
       },
       "block_order": ["heading", "text"],
       "custom_css": [
-        ".image-with-text__media { border-radius: 10px; overflow: hidden; }"
+        ".image-with-text__media { border-radius: 8px; overflow: hidden; }"
       ],
       "settings": {
         "desktop_image_width": "medium",
